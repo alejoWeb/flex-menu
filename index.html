@@ -3,33 +3,53 @@
   <head>
     <meta charset="UTF-8" />
     <title>FlexBox Nav</title>
-    <link
+    <!-- <link
       rel="stylesheet"
       href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css"
-    />
+    /> -->
     <link rel="stylesheet" href="styles.css" />
   </head>
+  
+  
   <body>
     <div class="cover">
-      <div class="flex-form">
-        <input type="search" placeholder="¿A donde quieres ir?" />
+      <form class="flex-form">
+        
+        <label for="search">
+          <span>Ubicación</span>
+          <input type="search" id="search" placeholder="¿A dónde quieres ir?" required />
+        </label>
 
-        <label for="from">Desde</label>
-        <input id="from" type="date" name="from" />
+        <label for="from">
+          <span>Salida</span>
+          <input type="date" id="from"  name="from" required />
+        </label>
 
-        <label for="until">Hasta</label>
-        <input id="until" type="date" name="to" />
+        <label for="until">
+          <span>Regreso</span> 
+          <input type="date" id="until"  name="until" required />
+        </label>
 
-        <select>
-          <option>1 persona</option>
-          <option>2 personas</option>
-          <option>3 personas</option>
-          <option>4 personas</option>
-          <option>5 personas</option>
-        </select>
+        <label for="list">
+          <span>Viajeros</span>
+          <select id="list" name="list" required />
+            <option>1 persona</option>
+            <option>2 persona</option>
+            <option>3 personas</option>
+            <option>4 personas</option>
+            <option>5 personas</option>
+            <option>Más de 5 personas</option>
+          </select>
+        </label>
 
         <button type="submit">Buscar</button>
-      </div>
+        
+        
+      </form>
     </div>
   </body>
 </html>
+
+
+
+        
