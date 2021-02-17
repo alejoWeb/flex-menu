@@ -87,6 +87,7 @@ button:hover {
   background-color:rgb(1, 160, 160);
   text-decoration: underline;
   border-radius: 15px;
+  cursor: pointer;
 }
 .flex-form {
   background-color: rgba(59, 59, 59, 0.424);
